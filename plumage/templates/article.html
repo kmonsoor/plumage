@@ -147,4 +147,12 @@
         </div>
     {% endif %}
 
+    {% if COMMENTBOX_PROJECT %}
+        <div class="comments mt-5 commentbox" >
+            <script type="text/javascript" src="https://unpkg.com/commentbox.io/dist/commentBox.min.js" async defer onload="commentBox('{{ COMMENTBOX_PROJECT }}');">
+            </script>
+            <noscript>Please enable JavaScript to comment on this post or view the existing comments.</noscript>
+        </div>
+    {% endif %}
+
 {% endblock %}
