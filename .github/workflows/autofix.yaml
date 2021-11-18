@@ -35,7 +35,7 @@ jobs:
             action](https://github.com/${{ github.repository
             }}/blob/${{ github.base_ref }}/.github/workflows/autofix.yaml).
           labels: CI/CD
-          assignees: kdeldycke
+          assignees: kmonsoor
           branch: format-python
 
   typos:
@@ -83,7 +83,7 @@ jobs:
             %0A
             ${{ steps.image_actions.outputs.markdown }}
           labels: CI/CD, documentation
-          assignees: kdeldycke
+          assignees: kmonsoor
           branch: optimize-images
 
   gitignore:
@@ -110,7 +110,7 @@ jobs:
             action](https://github.com/${{ github.repository
             }}/blob/${{ github.base_ref }}/.github/workflows/autofix.yaml).
           labels: CI/CD
-          assignees: kdeldycke
+          assignees: kmonsoor
           branch: update-gitignore
 
   css:
@@ -169,5 +169,5 @@ jobs:
             action](https://github.com/${{ github.repository
             }}/blob/${{ github.base_ref }}/.github/workflows/autofix.yaml).
           labels: CI/CD
-          assignees: kdeldycke
+          assignees: kmonsoor
           branch: autofix-css
